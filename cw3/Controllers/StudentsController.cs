@@ -50,5 +50,19 @@ namespace cw3.Controllers
             return Ok(student);
         }
 
+        [HttpPut("{id}")]
+
+        public IActionResult UpdateStudent(int id, Student student)
+        {
+            return Ok("Aktualizacja zakończona powodzeniem");
+        }
+
+        [HttpDelete("{id}")]
+
+        public IActionResult DeleteStudent(int id)
+        {
+            return Ok("Usuwanie zakończone");
+        }
+
     }
 }
